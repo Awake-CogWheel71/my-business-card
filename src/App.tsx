@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { User, Phone, Mail, Linkedin, Github, Globe, Share2, UserPlus, Edit2, Save, RotateCcw } from 'lucide-react';
+import { useState, useEffect, type ChangeEvent } from 'react';
+import { Phone, Mail, Linkedin, Github, UserPlus, Edit2, Save, RotateCcw } from 'lucide-react';
 
 // --- 1. DEFAULT DATA (HARDCODE YOUR INFO HERE) ---
 const defaultProfile = {
-  name: "Rich Chelson", // Change this!
+  name: "Richard Chelson", // Change this!
   title: "Creative Developer",
   phone: "228-355-4895",
   email: "rchelson@gmail.com",
@@ -38,8 +38,8 @@ function App() {
     setIsEditMode(false);
   };
 
-  // Handle text changes
-  const handleChange = (e) => {
+  // Handle text changes (Fixed for TypeScript)
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setProfile({ ...profile, [e.target.name]: e.target.value });
   };
 
