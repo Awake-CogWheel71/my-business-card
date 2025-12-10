@@ -3,10 +3,10 @@ import { Phone, Mail, Linkedin, Github, UserPlus, Edit2, Save, RotateCcw } from 
 
 // --- 1. DEFAULT DATA (HARDCODE YOUR INFO HERE) ---
 const defaultProfile = {
-  name: "Richard Chelson", // Change this!
+  name: "Justin Mason", // Change this!
   title: "Creative Developer",
-  phone: "228-355-4895",
-  email: "rchelson@gmail.com",
+  phone: "555-0199",
+  email: "hello@example.com",
   bio: "Building cool apps with AI.",
   linkedin: "https://linkedin.com",
   github: "https://github.com",
